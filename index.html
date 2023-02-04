@@ -22,8 +22,48 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    We're coming soon Hello fellow shoppers! We're currently building our new
-    fashion store. Add your email below to stay up-to-date with announcements
-    and our launch deals. Email Address
+    <main class="main">
+      <section class="main__header">
+        <div class="main__logo-box">
+          <img src="images/logo.svg" alt="Logo" class="main__logo" />
+        </div>
+      </section>
+
+      <section class="main__text-content">
+        <h1 class="heading heading--1">
+          <span class="heading--styled"> We're</span>
+          coming soon
+        </h1>
+        <p class="main__text">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form action="#" class="main__form">
+          <input
+            type="email"
+            class="main__input"
+            id="main__input"
+            placeholder="Email Address"
+          />
+          <label for="main__input" class="main__label"></label>
+          <button type="submit" class="btn btn--sumbit">
+            <img
+              src="images/icon-arrow.svg"
+              alt="Arrow icon"
+              class="main__arrow-icon"
+            />
+          </button>
+        </form>
+      </section>
+
+      <section class="main__illustration">
+        <img
+          src="images/hero-desktop.jpg"
+          alt="Illustration"
+          class="main__illustration-img"
+        />
+      </section>
+    </main>
   </body>
 </html>
