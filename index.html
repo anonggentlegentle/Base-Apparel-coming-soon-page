@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <main class="main">
@@ -40,6 +41,7 @@
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
+
         <form action="#" class="main__form">
           <input
             type="email"
@@ -47,8 +49,14 @@
             id="main__input"
             placeholder="Email Address"
           />
-          <label for="main__input" class="main__label"></label>
-          <button type="submit" class="btn btn--sumbit">
+          <label for="main__input" class="main__label">
+            <img
+              src="images/icon-error.svg"
+              alt="Icon"
+              class="main__error-icon"
+            />
+          </label>
+          <button type="submit" class="btn btn--submit">
             <img
               src="images/icon-arrow.svg"
               alt="Arrow icon"
