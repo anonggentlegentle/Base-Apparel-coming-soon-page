@@ -42,28 +42,31 @@
           launch deals.
         </p>
 
-        <form action="#" class="main__form">
-          <input
-            type="email"
-            class="main__input"
-            id="main__input"
-            placeholder="Email Address"
-          />
-          <label for="main__input" class="main__label">
-            <img
-              src="images/icon-error.svg"
-              alt="Icon"
-              class="main__error-icon"
+        <fieldset class="main__field">
+          <form action="#" class="main__form" novalidate>
+            <input
+              type="email"
+              class="main__input"
+              id="main__input"
+              placeholder="Email Address"
             />
-          </label>
-          <button type="submit" class="btn btn--submit">
-            <img
-              src="images/icon-arrow.svg"
-              alt="Arrow icon"
-              class="main__arrow-icon"
-            />
-          </button>
-        </form>
+            <label for="main__input" class="main__label">
+              <img
+                src="images/icon-error.svg"
+                alt="Icon"
+                class="main__error-icon"
+              />
+            </label>
+            <button type="submit" class="btn btn--submit">
+              <img
+                src="images/icon-arrow.svg"
+                alt="Arrow icon"
+                class="main__arrow-icon"
+              />
+            </button>
+          </form>
+          <p class="main__form-invalid">Please provide a valid email</p>
+        </fieldset>
       </section>
 
       <section class="main__illustration">

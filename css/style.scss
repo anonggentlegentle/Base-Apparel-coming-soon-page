@@ -86,14 +86,33 @@ video {
     width: 70%;
   }
 
+  &__field {
+    width: 70%;
+    outline: none;
+    border: none;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
   &__form {
     border: 1px solid var(--color-desaturated-red);
     border-radius: 100rem;
-    width: 70%;
+    width: 100%;
+    padding: 1.5rem 0;
+    position: relative;
 
     display: flex;
     align-items: center;
     column-gap: 1rem;
+  }
+
+  &__form-invalid {
+    padding-left: 2.5rem;
+    color: var(--color-soft-red);
+    font-size: 1.3rem;
+    display: none;
   }
 
   &__input {
@@ -101,7 +120,8 @@ video {
     background-color: transparent;
     border: none;
     outline: none;
-    padding: 1.5rem 0 1.5rem 2.5rem;
+    padding-left: 2.5rem;
+    font-size: 1.6rem;
 
     flex: 1;
 
@@ -112,12 +132,19 @@ video {
 
     &:active {
       outline: none;
+      background-color: transparent;
     }
   }
 
-  &__error-icon {
+  &__label {
+    position: absolute;
+    right: 9rem;
     display: none;
   }
+
+  // &__field:invalid &__label {
+  //   display: block;
+  // }
 
   &__arrow-icon {
     width: 1.5rem;
@@ -160,6 +187,8 @@ video {
     margin-left: auto;
     border-radius: 100rem;
     transition: all 0.2s;
+    position: absolute;
+    right: 0;
 
     display: flex;
     justify-content: center;
@@ -177,4 +206,14 @@ video {
       box-shadow: 0 0.75rem 0.5rem hsla(0, 0%, 0, 0.1);
     }
   }
+}
+
+// State style
+
+.unhide {
+  display: block;
+}
+
+.form-error-border {
+  border: 2px solid var(--color-soft-red);
 }
