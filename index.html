@@ -70,11 +70,24 @@
       </section>
 
       <section class="main__illustration">
-        <img
+        <picture class="main__illustration-container">
+          <source
+            media="(max-width: 900px)"
+            srcset="images/hero-mobile.jpg"
+            class="main__illustration-src"
+          />
+          <img
+            src="images/hero-desktop.jpg"
+            alt="Illustration"
+            class="main__illustration-img"
+          />
+        </picture>
+
+        <!-- <img
           src="images/hero-desktop.jpg"
           alt="Illustration"
           class="main__illustration-img"
-        />
+        /> -->
       </section>
     </main>
   </body>

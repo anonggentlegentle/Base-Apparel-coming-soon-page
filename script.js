@@ -12,12 +12,12 @@ const inputValue = input.value;
 btn.addEventListener("click", function (e) {
   e.preventDefault;
 
-  if (!input.validity.valid) {
+  if (!input.validity.valid || inputValue === "") {
     form.classList.add("form-error-border");
     invalidEmail.classList.add("unhide");
     label.classList.add("unhide");
     console.log(form);
-  } else if (input.validity.valid || inputValue === "") {
+  } else if (input.validity.valid) {
     form.classList.remove("form-error-border");
     invalidEmail.classList.remove("unhide");
     label.classList.remove("unhide");
